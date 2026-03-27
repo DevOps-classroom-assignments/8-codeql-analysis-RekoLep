@@ -51,7 +51,7 @@ jobs:
 
       - name: Run container
         run: |
-          docker run -p 8080:8080 go-web-server
+          docker run -d -p 8080:8080 
           sleep 5
       
       - name: Debug container logs
